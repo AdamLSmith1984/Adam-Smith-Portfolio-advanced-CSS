@@ -6,19 +6,50 @@
 }
 
 body {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
     background-color: blue;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .5px;
+    line-height: 1.6em;
+    margin: 0 16.5%;
+}
+
+h1 {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+img {
+    border: .5px solid white;
+    border-radius: 2px;
 }
 
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: blue;
     color: white;
+    display: inline-block;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: left;
+    border-bottom: solid white .15px;
+    width: 100%;
+    padding: 0 0% 0% 0%;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
+.header img {
+    border: none;
 }
 
 .header header,
