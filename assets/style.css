@@ -18,7 +18,7 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    background-color: var(--c-dblue);
+    background-color: var(--c-lblue);
     font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -45,13 +45,13 @@ img {
 }
 
 .header {
-    color: var(--c-red);
+    color: var(--c-yellow);
     display: inline-block;
     text-align: center;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: left;
-    border-bottom: solid var(--c-lblue) .15px;
+    border-bottom: solid var(--c-dblue) .15px;
     width: 100%;
     padding: 0 0% 0% 0%;
 }
@@ -141,7 +141,20 @@ nav a:hover {
     margin: 5px;
 }
 
+.projects1-container a {
+    overflow: hidden;
+    white-space: nowrap;
+    object-fit: scale-down;
+    opacity: 0.8;
+    margin: 5px;
+}
+
 .projects-container a:hover {
+    filter: drop-shadow(5px 3px 10px var(--c-red2));
+    opacity: 1;
+}
+
+.projects1-container a:hover {
     filter: drop-shadow(5px 3px 10px var(--c-red2));
     opacity: 1;
 }
@@ -193,8 +206,8 @@ nav a:hover {
 }
 
 .contact-container {
-    border-top: solid var(--c-lblue) .15px;
-    border-bottom: solid var(--c-lblue) .15px;
+    border-top: solid var(--c-dblue) .15px;
+    border-bottom: solid var(--c-dblue) .15px;
     padding: 2% 0 2% 0;
     width: 100%;
 }
